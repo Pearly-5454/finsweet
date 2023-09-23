@@ -3,59 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/802549cc41.js" crossorigin="anonymous"></script>
+
+    <!-- title -->
     <title>Finsweet landing page</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>{finsweet</h1>
-        </div>
+        
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Service</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
+            <div class="logo">
+                <h1>{finsweet</h1>
+            </div>
             <div class="right-contact">
-                <div class="right-contact-icon">
-                    <img src="./img/Assistance Icon.png" alt="contact-icon" width="30px">
-                </div>
-                <div class="right-contact-text">
-                    <p>Road Assistance</p>
-                    <p>1800 265 24 52</p>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="rgt-con-icon">
+                    <div class="right-contact-icon">
+                        <img src="./img/Assistance Icon.png" alt="contact-icon" width="30px">
+                    </div>
+                    <div class="right-contact-text">
+                        <p>Road Assistance</p>
+                        <p>1800 265 24 52</p>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="parent-flex">
         <div class="container">
-            <div class="left-text">
+            <div class="left-text left">
                 <div class="content">
                     <h1>Get your vehicle service done online at one place</h1>
                 </div>
                 <div class="btn-s">
                     <button class="Btn">Book a service</button>
                 </div>
-                <nav>
+                <div class="icon">
                     <div class="left-time">
                         <div class="left-time-icon">
-                            <img src="./img/Icon.png" alt="time icon" width="25px">
+                            <img src="./img/Icon.png" alt="time icon" width="20px">
                         </div>
                     </div>
-                    <div class="opening-time">
-                        <p>We are open</p>
-                        <p>Monday to Friday 9:00 AM to 10:00 AM</p>
-                    </div>
-                </nav>   
+                    <div class="">
+                        <div class="opening-time">
+                            <p>We are open</p>
+                        </div>
+                        <div class="time">
+                            <p>Monday to Friday 9:00 AM to 10:00 AM</p>
+                        </div>
+                    </div> 
+                </div>   
             </div> 
-            <div class="right-img">
+            <div class="right-img right">
                 <img src="./img/Rating.png" alt="rating" width="70%" class="rating" />
                 <img src="./img/Service.png" alt="Service" width="70%" class="service" />
             </div>
         </div>      
-    </main> 
+    </main>
+    <!-- section 1 -->
+    <section id="car-service-section" class="parent-flex car-service-bg"> 
+        <div class="container">
+            <div class="left">
+                <h1>We are taking car servicing seriously</h1>
+                <div class="car-service">
+                    <div class="sec1">
+                        <div class="left-icon">
+                            <i class="fa-solid fa-gear" style="color: #040506;"></i>    
+                        </div>
+                        <div class="carservice-right">
+                            <h4>Convenient services</h4>
+                            <p>Through True Rich Attended does no end
+                            <p>it his mother since real had half every him.</p>
+                        </div>
+                    </div>
+                    <div class="sec2">
+                        <div class="left-icon">
+                            <div class="img">
+                                <i class="fa-solid fa-wrench" style="color: #070709;"></i>
+                            </div>
+                        </div>
+                        <div class="carservice-right">
+                            <h4>Expert mechanics</h4>
+                            <p>Through True Rich Attended does no end</p> 
+                            <p>it his mother since real had half every him.</p>
+                        </div>
+                    </div>
+                    <div class="sec3">
+                        <div class="left-icon">
+                            <i class="fa-solid fa-comment-dollar" style="color: #020203;"></i>
+                        </div>
+                        <div class="carservice-right">
+                            <h4>Transparent pricing</h4>
+                            <p>Through True Rich Attended does no end</p>
+                            <p>it his mother since real had half every him.</p>
+                        </div> 
+                    </div>
+                    <h6>Know more about us <i class="fa-solid fa-arrow-right" style="color: #020303;"></i></h6>
+                </div>     
+            </div>
+            <div class="right">
+                <h1>Get a quote for the car service</h1>
+                <input type="text" placeholder="Enter your location">
+                <input type="text" placeholder="Enter your location">
+                <input type="text" placeholder="Enter your location">
+                <input type="text" placeholder="Your phone number">
+                <button class="btn1">Get your quote</button>
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- section 2 -->
+    <section id="help-process-section" class="parent-flex process-section-bg">
+        <div class="container">
+            <div class="left">
+                <div class="inside">
+                    <h1>We follow a clear process to help you out</h1>
+                    <p>Through True Rich Attended does no end it his mother</p>
+                    <p>since real had half every him case in packages enquire</p>
+                    <button class="btn3">learn more</button>
+                </div>   
+            </div>
+            <div class="right">
+                    <div class="leftimage">
+                        <img src="img/Group 9129.png" alt="" width="40px">
+                        <h4>Get a Quote</h4>
+                    </div>
+                <div class="rgt-image">
+                    <img src="img/Line.png" alt="" height="50%">
+                    <p>Through True Rich Attended does no <br> end it his mother since real had half <br> every.</p>
+                </div>
+                <div class="leftimage">
+                    <img src="img/Group 9130.png" alt="" width="40px">
+                    <h4>Book an Appointment</h4>
+                </div>
+                <div class="rgt-image">
+                    <img src="img/Line.png" alt="" height="50%">
+                    <p>Through True Rich Attended does no </br> end it his mother since real had half <br> every.</p>
+                </div>
+                <div class="leftserviceimage">
+                    <div class="thirdicon">
+                        <img src="img/Group 9131.png" alt="" width="40px">
+                    </div>
+                    
+                    <div>
+                        <h4>Get your Service Done</h4>
+                        <p>Through True Rich Attended does no <br> end it his mother since real had half <br> every.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 3 -->
+    <section id="what-we-offer" class="parent-flex what-we-offer-bg">
+        <div class="container">
+            <div class="content">
+                <h5>What we offer</h5>
+                <h1>We offer full auto repair service & maintenance</h1>
+                <div class="what-we-offer-services">
+                    <div class="service">
+                        <div>
+                            <img src="img/diagnostics.png" alt="" height="">
+                            <p>Diagnostics</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img src="img/engine repair.png" alt="">
+                        <p>Engine Repair</p>
+                        </div>                    
+                    </div>
+                    <div class="service" style="background-color: #FF6433;">
+                        <div>
+                            <img src="img/Icon (10).png" alt="">
+                            <p>Wheel Repair</p>
+                        </div>                       
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img src="img/oil filter.png" alt="">
+                            <p>Oil Filter </p>
+                        </div>                       
+                    </div>
+                    <div class="service">
+                            <div>
+                                <img src="img/bodywork.png" alt="">
+                                <p>Body Work</p>
+                            </div>  
+                        </div>
+                    <div class="service">
+                        <div>
+                            <img src="img/batteries.png" alt="">
+                            <p>Batteries</p>
+                        </div> 
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img src="img/insurance claim.png" alt="">
+                        <p>Insurance Claim</p>
+                        </div>                        
+                    </div>
+                    <div class="service">
+                        <div>
+                            <img src="img/custom service.png" alt="">
+                            <p>Custom Service</p>
+                        </div> 
+                    </div>
+                </div>  
+                <div class="learn">
+                    <h6>Learn about services</h6>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <!-- section 4 -->
+    <section id="get-in-touch" class="parent">
+        <div class="first">
+            <div class="left-car">
+                <div class="left-card">
+                    <div class="content">
+                        <h2>Get in touch with us for your service related query</h2>
+                        <button class="btn4">Contact us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-car">
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="container">
+                <div class="one ">
+                    <h1>20+</h1>
+                    <p>Proffesional</p>
+                </div>
+                <div class="second">
+                    <h1>10+</h1>
+                    <p>Years Experience</p>
+                </div>
+                <div class="third">
+                    <h1>12k+</h1>
+                    <p>Service Closed</p>
+                </div>
+                <div class="fourth">
+                    <h1>100%</h1>
+                    <P>Customer Satisfaction</P>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

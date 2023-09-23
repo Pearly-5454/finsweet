@@ -2,15 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
 }
 
+/* header styling */
+
+
 header {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    padding: 14px 10px;
+    padding: 10px 0px;
+    background-color: white;
+    z-index: 1000;
+    position: fixed;
 }
 
 header .logo {
@@ -20,25 +26,36 @@ header .logo {
 nav {
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
 
 nav ul {
     display: flex;
     align-items: center;
     column-gap: 40px;
-    border-right: 1px solid gray;
+    
     padding: 5px 20px 5px 0px;
 }
 
 nav ul li {
     list-style: none;
+    font-family: 'Playfair Display', serif;
 }
 
 nav .right-contact {
     display: flex;
     align-items: center;
     column-gap: 10px;
+    padding-left: 10px;
+}
+
+.rgt-con-icon {
+    border-left: 1px solid gray ;
+    padding-left: 5px;
+    display: flex;
+    gap: 10px;
 }
 
 nav .right-contact .right-contact-text p {
@@ -48,44 +65,78 @@ nav .right-contact .right-contact-text p {
 
 /* main styling */
 
-main {
-    height: 89vh;
+/* global styling */
+
+.container {
+    height: 80%;
     width: 80%;
+    display: flex;
+}
+
+.parent-flex {
+    height: 100vh;
+    width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-
-main .container {
-    height: 80%;
-    width: 100%;
-    display: flex;
-
-}
-
-main .container .left-text {
+.left {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.carservice {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 15px;
+    
+}
+
+h1 {
+    font-size:35px;
+    margin-bottom: 20px;
+}
+
+
+
+/* End global styling */
+
+
+
+/* main .container .left-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
 
 main .container .left-text .content {
     width: 80%;
 }
 
 main .container .left-text h1 {
-    width: 70%;
+    width: 80%;
     
 }
 
 main .container .right-img {
-    width: 50%;
-    height: 100%;
+    /* width: 50%;
+    height: 100%; */
     background-image: url('../img/Image.png');
     background-position: center;
     background-size: cover;
@@ -109,12 +160,21 @@ main .container .right-img .rating {
 
 .Btn {
     width: 100px;
-    height: 40px;
+    height: 35px;
+    padding: 6px 15px;
+    margin-top: 6px;
     background-color: #FF6433;
     border-radius: 10px;
     border: none;
     color: white;
     font-size: 60%;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.Btn:hover {
+    transform: scale(1.05);
+    background-color: #df491c;
 }
 
 .btn-s {
@@ -123,16 +183,301 @@ main .container .right-img .rating {
     justify-content:flex-start ;
 }
 
-nav .left-time-icon {
+
+.nav .left-time-icon {
     display: flex;
     align-items: start;
     justify-content: flex-start;
-    padding: 20px 0px; 
+    padding: 20px 0px;
+    color: #E2E6E9;
 }
 
+.icon {
+    display: flex;
+    padding-top: 15px;
+}
 
-nav .opening-time {
-    font-size: small;
+.icon .opening-time {
+    font-size: large;
     align-items: self-start;
     justify-content: self-start;
+    color:#939191;
+
 }
+
+.left-time-icon {
+    padding-right: 10px;
+}
+
+
+.icon .time {
+    font-size: large;
+    font-weight: 800px;
+}
+
+
+
+/* car servicing section */
+
+.car-service-bg {
+    background-color: #E2E6E9;
+}
+
+.sec2 .left-icon .img {
+    display: flex;
+    justify-content: center;
+}
+
+.sec1 {
+    display: flex;
+}
+
+.sec2 {
+    display: flex;
+    padding-top: 20px;
+}
+
+.sec3 {
+    display: flex;
+    padding-top: 20px;
+}
+
+
+.left-icon {
+    margin-right: 10px;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+
+}
+
+
+h6 {
+    margin-top: 25px;
+}
+
+.left h1 {
+    width: 70%;
+
+}
+
+.btn1 {
+    background-color:#FF6433;
+    width: 20%;
+    height:32px ;
+    color: white;
+    font-size: x-small;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+}
+
+.right h1 {
+    width: 70%;
+    font-size: xx-large;
+}
+
+.leftimage {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.rgt-image {
+    display: flex;
+    gap: 35px;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.leftserviceimage {
+    display: flex;
+    gap: 10px;
+}
+
+.right input {
+    width: 60%;
+    height: 40px;
+    font-size: x-small;
+    border: none;
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+/* help-process */
+
+#help-process-section {
+    width: 100%;
+}
+
+.rgt-image h4 {
+    margin-top: 10px;
+    font-size: larger;
+}
+
+
+/* .rgt-image {
+    width: 80%;
+    padding-right: 30px;
+} */
+
+p {
+    font-size: 60%;
+}
+
+.btn3 {
+    background-color:#FF6433;
+    width: 25%;
+    height:32px ;
+    color: white;
+    font-size: x-small;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+}
+
+.inside {
+    padding-right: 50px;
+}
+
+
+
+/* what we offer */
+
+.what-we-offer-bg {
+    background-color: #F2F2F2;
+}
+
+
+#what-we-offer .content {
+    width: 100%;
+    text-align: center;
+
+}
+
+#what-we-offer .content .what-we-offer-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#what-we-offer .content .what-we-offer-services .service {
+    background-color: white;
+    height: 200px;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .learn {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+ }
+
+
+
+/* get in touch */
+#get-in-touch {
+    height: 70vh;
+    width: 100%;
+}
+
+#get-in-touch .first {
+    height: 75%;
+    width: 100%;
+    display: flex;
+}
+
+#get-in-touch .first .left-car {
+    width: 50%;
+    height:100%;
+    background-image: url('../img/car-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-card {
+    height: 100%;
+    width: 70%;
+    background-color: #FF6433;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    font-size: large;
+    color: white;
+}
+
+.btn4 {
+    background-color: #1E1B1B;
+    width: 25%;
+    height:32px;
+    color: white;
+    font-size: x-small;
+    border-radius: 7px;
+    margin-top: 15px;
+    border: none;
+}
+
+
+#get-in-touch .first .right-car {
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/car-right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#get-in-touch .second-row {
+    height: 25%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-in-touch .second-row .container {
+    width: 80%;
+    display: flex;
+    gap: 160px;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.one h1 {
+    color:#661CE7;
+}
+
+.second h1 {
+    color:#661CE7;
+}
+
+.third h1 {
+    color:#661CE7;
+}
+
+.fourth h1 {
+    color:#661CE7;
+}
+
+.second-row .container p {
+    color:#1E1B1B;
+    font-size: 12px;
+
+}
+
+
+
