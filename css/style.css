@@ -35,8 +35,8 @@ nav ul {
     display: flex;
     align-items: center;
     column-gap: 40px;
-    
     padding: 5px 20px 5px 0px;
+    border-right: 1px solid gray;
 }
 
 nav ul li {
@@ -51,8 +51,8 @@ nav .right-contact {
     padding-left: 10px;
 }
 
+
 .rgt-con-icon {
-    border-left: 1px solid gray ;
     padding-left: 5px;
     display: flex;
     gap: 10px;
@@ -301,7 +301,7 @@ h6 {
 }
 
 .right input {
-    width: 60%;
+    width: 85%;
     height: 40px;
     font-size: x-small;
     border: none;
@@ -432,7 +432,6 @@ p {
     border: none;
 }
 
-
 #get-in-touch .first .right-car {
     width: 50%;
     height: 100%;
@@ -477,7 +476,6 @@ p {
 .second-row .container p {
     color:#1E1B1B;
     font-size: 12px;
-
 }
 
 
