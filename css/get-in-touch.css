@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+/* get in touch */
+#get-in-touch {
+    height: 70vh;
+    width: 100%;
+}
+
+#get-in-touch .first {
+    height: 75%;
+    width: 100%;
+    display: flex;
+}
+
+#get-in-touch .first .left-car {
+    width: 50%;
+    height:100%;
+    background-image: url('../img/car-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-card {
+    height: 100%;
+    width: 70%;
+    background-color: #FF6433;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    font-size: large;
+    color: white;
+}
+
+.btn4 {
+    background-color: #1E1B1B;
+    width: 25%;
+    height:32px;
+    color: white;
+    font-size: x-small;
+    border-radius: 7px;
+    margin-top: 15px;
+    border: none;
+}
+
+#get-in-touch .first .right-car {
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/car-right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#get-in-touch .second-row .container {
+    margin: 0 auto;
+    display: flex;
+    gap: 160px;
+    align-items: center;
+}
+
+.one, .two, .third, .fourth {
+    text-align: center;
+}
+
+.one h1 {
+    color:#661CE7;
+}
+
+.two h1 {
+    color:#661CE7;
+}
+
+.third h1 {
+    color:#661CE7;
+}
+
+.fourth h1 {
+    color:#661CE7;
+}
+
+.second-row .container p {
+    color:#1E1B1B;
+    font-size: 12px;
+}
+ /* tablet */
+@media (min-width: 427px) and (max-width: 850px) {
+    /* get-in-touch */
+
+    #get-in-touch {
+        height: auto;
+    }
+    #get-in-touch .first {
+        flex-direction: column;
+        height: auto;
+    }
+    #get-in-touch .first .left-car {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #get-in-touch .first .right-car {
+        height: 30vh;
+        width: 100%;
+    }
+
+    #get-in-touch .second-row {
+        height: auto;
+        width: 100%;
+    }
+    #get-in-touch .second-row .container {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 60px;
+
+        /* gap: 10px; */
+    }
+
+    .btn4 {
+        width: 25%;
+        height:35px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+
+    .left-card {
+        font-size: 18px;
+    }
+
+    #get-in-touch .second-row .container h1 {
+        font-size: 30px;
+    }
+    #get-in-touch .second-row .container .one p {
+        font-size: 16px;
+    }
+
+    #get-in-touch .second-row .container .two p {
+        font-size: 16px;
+    }
+    #get-in-touch .second-row .container .third p {
+        font-size: 16px;
+    }
+
+    #get-in-touch .second-row .container .fourth p {
+        font-size: 16px;
+    }
+
+}
+
+/* mobile */
+@media (max-width: 426px) {
+    /* get-in-touch */
+
+    #get-in-touch {
+        height: auto;
+    }
+    #get-in-touch .first {
+        flex-direction: column;
+        height: auto;
+    }
+    #get-in-touch .first .left-car {
+        width: 100%;
+    }
+
+    #get-in-touch .first .right-car {
+        height: 30vh;
+        width: 100%;
+    }
+
+    #get-in-touch .second-row {
+        height: auto;
+        width: 100%;
+    }
+    
+    #get-in-touch .second-row .container {
+        gap: 40px;
+    
+    }
+    
+    .btn4 {
+        width: 45%;
+        height:28px;
+        margin-bottom: 10px;
+    }
+
+    .content h2 {
+        padding-top: 10px;
+    }
+
+    .left-card {
+        font-size: 15px;
+    }
+
+    .one, .two, .third, .fourth {
+        width: 40%;
+    }
+    
+    #get-in-touch .second-row .container .one p {
+        font-size: 12px;
+    }
+    #get-in-touch .second-row .container .two p {
+        font-size: 12px;
+    }
+
+    #get-in-touch .second-row .container .third p {
+        font-size: 12px;
+    }
+
+    #get-in-touch .second-row .container .fourth p {
+        font-size: 12px;
+    }
+
+    #get-in-touch .second-row .container  h1 {
+        font-size: 25px;
+    }
+}
+
